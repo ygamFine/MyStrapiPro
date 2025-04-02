@@ -23,6 +23,9 @@
           "localized": true
         }
       }
+    },
+    "path": {
+      "type": "text"
     }
   }
 }
