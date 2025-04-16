@@ -1,0 +1,172 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::product.product",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "decs": {
+        "edit": {
+          "label": "decs",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "decs",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "price": {
+        "edit": {
+          "label": "price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "price",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "decs",
+        "image"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "decs",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 6
+          },
+          {
+            "name": "price",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "api::product.product"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
