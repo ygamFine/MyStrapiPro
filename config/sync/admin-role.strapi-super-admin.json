@@ -1145,6 +1145,24 @@
       "locale": null
     },
     {
+      "documentId": "b84smv1fdbr5cjmcnepzl0qc",
+      "action": "plugin::strapi-csv-import-export.export",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "al8oogydidgj2o9hcidl69jh",
+      "action": "plugin::strapi-csv-import-export.import",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "xni97ekuk3ovmcl74km9iye3",
       "action": "plugin::strapi-import-export.export",
       "actionParameters": {},
