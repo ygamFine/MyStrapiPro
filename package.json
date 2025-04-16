@@ -4,7 +4,7 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "build": "strapi build && strapi import --file strapi-data-export.tar.gz.enc --key ygam --force",
+    "build": "strapi build",
     "export": "strapi export --file strapi-data-export.tar.gz.enc",
     "imp": "strapi import --file strapi-data-export.tar.gz.enc --key 'ygam' --force",	
     "console": "strapi console",
