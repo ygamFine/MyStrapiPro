@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "keywords",
+  "info": {
+    "singularName": "keyword",
+    "pluralName": "keywords",
+    "displayName": "Keywords"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "keys": {
+      "type": "json"
+    }
+  }
+}

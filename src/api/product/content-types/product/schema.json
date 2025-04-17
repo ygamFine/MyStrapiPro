@@ -55,6 +55,14 @@
           "localized": true
         }
       }
+    },
+    "internalLinkKeywords": {
+      "type": "json"
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.keywords"
     }
   }
 }

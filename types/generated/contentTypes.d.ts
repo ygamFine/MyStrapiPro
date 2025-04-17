@@ -620,6 +620,38 @@ export interface ApiInquiryInquiry extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiKeywordKeyword extends Struct.SingleTypeSchema {
+  collectionName: 'keywords';
+  info: {
+    displayName: 'Keywords';
+    pluralName: 'keywords';
+    singularName: 'keyword';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    keys: Schema.Attribute.JSON;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::keyword.keyword'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMenuMenu extends Struct.CollectionTypeSchema {
   collectionName: 'menus';
   info: {
@@ -688,6 +720,8 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    internalLinkKeywords: Schema.Attribute.JSON;
+    keywords: Schema.Attribute.Component<'shared.keywords', false>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1228,6 +1262,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
       'api::inquiry.inquiry': ApiInquiryInquiry;
+      'api::keyword.keyword': ApiKeywordKeyword;
       'api::menu.menu': ApiMenuMenu;
       'api::product.product': ApiProductProduct;
       'plugin::content-releases.release': PluginContentReleasesRelease;
