@@ -1,0 +1,14 @@
+{
+    "collectionName": "components_shared_keywords",
+    "info": {
+        "displayName": "keywords",
+        "icon": "command",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "internalLinkKeywords": {
+            "type": "json"
+        }
+    }
+}
